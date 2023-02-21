@@ -1,0 +1,43 @@
+//código en donde el usuario podrá obtener citas APA a través de ciertas palabras que le pida el programa para que este las procese y se cree la nueva cita.
+package citas;
+
+import java.util.Scanner;
+
+public class CitasAPA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//genero apodos para denominar a mis "clases" que usaré
+		
+		String ape,nomini,año,tit,subtit,ed,lug,edit;
+		Scanner lee = new Scanner(System.in);
+		
+		//programa para citas en formato APA
+		//Inicio del código de formato APA
+		System.out.println("Ingresa los apellidos del autor");
+		ape=lee.nextLine();
+		
+		System.out.println("Ingresa solamente la incial del nombre(s) del autor");
+		nomini=lee.nextLine();
+		
+		System.out.println("Ingresa el año de publicación del libro");
+		año=lee.nextLine();
+		
+		System.out.println("Ingresa el título del libro y subtítulo si es que cuenta con uno");
+		tit=lee.nextLine();
+		
+		System.out.println("Ingresa la edición del libro con letras en minúscula");
+		ed=lee.nextLine();
+		
+		System.out.println("Ingresa el lugar de publicación");
+		lug=lee.nextLine();
+		
+		System.out.println("Ingresa la editorial del libro");
+		edit=lee.nextLine();
+		//fin del código del formato APA
+		
+		//Salida del programa
+		System.out.println(ape+"," + nomini +". " + "("+año+")" +". " +tit +". " + "("+ed+")" +". "+lug +": "+edit);
+	}//fin de la salida
+
+}
